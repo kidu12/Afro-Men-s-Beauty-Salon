@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Afro Barber (Physical Phone - Wi-Fi IP 192.168.0.111)",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--dart-define=API_BASE_URL=http://192.168.0.111/afro_barber_api/public"
+      ]
+    },
+    {
+      "name": "Afro Barber (Android Emulator - 10.0.2.2)",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--dart-define=API_BASE_URL=http://10.0.2.2/afro_barber_api/public"
+      ]
+    },
+    {
+      "name": "Afro Barber (Web / Desktop - Localhost)",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--dart-define=API_BASE_URL=http://127.0.0.1/afro_barber_api/public"
+      ]
+    }
+  ]
+}

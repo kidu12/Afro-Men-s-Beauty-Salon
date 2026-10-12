@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Network Security Configuration for Afro-Barber.
+
+  DEVELOPMENT: Allow cleartext (plain HTTP) traffic to local IP addresses and LAN servers
+               so the physical Android phone can communicate with the XAMPP Apache server.
+  PRODUCTION:  Builds directed to production HTTPS will use system TLS certificates.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
